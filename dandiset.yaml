@@ -3,7 +3,16 @@
 # and obtained from the dandiarchive.
 '@context': 
   https://raw.githubusercontent.com/dandi/schema/master/releases/0.7.0/context.json
-about: []
+about:
+- identifier: http://purl.obolibrary.org/obo/UBERON_4450000
+  name: medial prefrontal cortex
+  schemaKey: Anatomy
+- identifier: https://purl.brain-bican.org/ontology/mbao/MBA_295
+  name: Basolateral amygdalar nucleus
+  schemaKey: Anatomy
+- identifier: https://purl.brain-bican.org/ontology/mbao/MBA_194
+  name: Lateral hypothalamic area
+  schemaKey: Anatomy
 access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
@@ -65,6 +74,7 @@ citation: Keyes, Laurel; Padilla-Coreano, Nancy; Batra, Kanha; Patarino, Makenzi
 contributor:
 - affiliation: []
   email: lkeyes@salk.edu
+  identifier: 0000-0001-5433-9948
   includeInCitation: true
   name: Keyes, Laurel
   roleName:
@@ -90,22 +100,26 @@ contributor:
   roleName:
   - dcite:Author
   schemaKey: Person
-- includeInCitation: true
+- identifier: 0009-0005-4770-7876
+  includeInCitation: true
   name: Chen, Zexin
   roleName:
   - dcite:Author
   schemaKey: Person
-- includeInCitation: true
+- identifier: 0000-0002-2835-3866
+  includeInCitation: true
   name: Rock, Rachel
   roleName:
   - dcite:Author
   schemaKey: Person
-- includeInCitation: true
+- identifier: 0000-0002-1564-5907
+  includeInCitation: true
   name: Zhang, Ruihan
   roleName:
   - dcite:Author
   schemaKey: Person
-- includeInCitation: true
+- identifier: 0000-0002-4728-6865
+  includeInCitation: true
   name: Hausmann, Sebastien B.
   roleName:
   - dcite:Author
@@ -262,7 +276,8 @@ contributor:
   roleName:
   - dcite:Funder
   schemaKey: Organization
-- identifier: https://ror.org/04xeg9z08
+- awardNumber: R01-MH115920
+  identifier: https://ror.org/04xeg9z08
   includeInCitation: false
   name: National Institute of Mental Health
   roleName:
@@ -337,6 +352,14 @@ relatedResource:
   resourceType: dcite:JournalArticle
   schemaKey: Resource
   url: https://www.nature.com/articles/s41586-022-04507-5
+- identifier: doi:10.1038/s41586-022-04507-5
+  name: Padilla-Coreano, N., Batra, K., Patarino, M. et al. (2022). Cortical ensembles
+    orchestrate social competition through hypothalamic outputs. Nature 603, 667-671.
+  relation: dcite:IsDescribedBy
+  repository: Nature
+  resourceType: dcite:JournalArticle
+  schemaKey: Resource
+  url: https://doi.org/10.1038/s41586-022-04507-5
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.7.0
